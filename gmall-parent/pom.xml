@@ -8,10 +8,26 @@
     <artifactId>gmall-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+
+    <modules>
+        <module>../gmall-common-util</module>
+        <module>../gmall-service-util</module>
+        <module>../gmall-web-util</module>
+        <module>../gmall-bean</module>
+        <module>../gmall-interface</module>
+    </modules>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+
+        <dubbo-starter.version>1.0.10</dubbo-starter.version>
+
+        <dubbo.version>2.6.0</dubbo.version>
+
+        <zkclient.version>0.10</zkclient.version>
 
         <fastjson.version>1.2.46</fastjson.version>
         <dubbo-starter.version>1.0.10</dubbo-starter.version>
@@ -30,6 +46,7 @@
         <jna.version>4.5.1</jna.version>
         <beanUtils.version>1.9.3</beanUtils.version>
     </properties>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -141,6 +158,23 @@
                 <version>${beanUtils.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.101tec</groupId>
+                <artifactId>zkclient</artifactId>
+                <version>${zkclient.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.gitee.reger</groupId>
+                <artifactId>spring-boot-starter-dubbo</artifactId>
+                <version>${dubbo-starter.version}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>

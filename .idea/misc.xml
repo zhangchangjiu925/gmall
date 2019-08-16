@@ -4,9 +4,18 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/gmall-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/gmall-bean/pom.xml" />
-        <option value="$PROJECT_DIR$/gmall-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-common-util/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-service-util/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-web-util/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-order-web/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-user-manage/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall-manage-web/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/gmall-order-web/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager">
