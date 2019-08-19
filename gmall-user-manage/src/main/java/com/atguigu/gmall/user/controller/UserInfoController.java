@@ -1,5 +1,6 @@
 package com.atguigu.gmall.user.controller;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.atguigu.gmall.bean.UserAddress;
 import com.atguigu.gmall.bean.UserInfo;
 import com.atguigu.gmall.service.UserInfoService;
@@ -12,7 +13,7 @@ import java.util.List;
 @RestController
 public class UserInfoController {
 
-    @Autowired
+    @Reference
     private UserInfoService userInfoService;
 
 
