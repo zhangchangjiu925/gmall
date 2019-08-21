@@ -27,4 +27,19 @@ public interface ManageService {
 
     //查询所有商品
     List<SpuInfo> getSpuInfoList(SpuInfo spuInfo);
+
+    // 查询基本销售属性表
+    List<BaseSaleAttr> getBaseSaleAttrList();
+
+    //保存添加SPU
+    void addSaveSpuInfo(SpuInfo spuInfo);
+
+    //spuSaleAttrList查询该SPU的所有销售属性
+    List<SpuSaleAttr> spuSaleAttrListBySpoInfo(String spuId);
+
+    //根据Spu查询它的图片
+    List<SpuImage> spuImageListBySpoInfo(String spuId);
+
+    //保存SKU
+    void addSaveSkuInfo(SkuInfo skuInfo);
 }
